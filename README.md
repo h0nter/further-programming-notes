@@ -1,2 +1,2 @@
-# further-programming-notes
+# Further Programming notes
 My notes for the Further Programming module
