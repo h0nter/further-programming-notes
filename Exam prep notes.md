@@ -275,6 +275,21 @@ private File chooseFile(Stage stage){
 - **Serialization** - process of saving the object's state to the disk
 - Many objects can be saved to the same file
 
+**Saving to file**
+```java
+ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(file or file_name));
+os.writeObject(object);
+os.close();
+```
+**Reading from file**
+```java
+ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file or file_name));
+
+Object o = ois.readObject();
+//Check for type and then use...
+os.close()
+```
+
 ---
 ##### State Space
 - States
